@@ -1,0 +1,32 @@
+.SideBar {
+    height: calc(100vh - var(--navbar-height));
+    position: relative;
+    width: var(--sidebar-width);
+    transition: width 0.3s ease;
+    background-color: var(--nav-bar-bg-color);
+}
+
+.collapsed {
+    width: var(--sidebar-width-collapsed);
+}
+
+.button {
+    margin-left: auto;
+    padding: 10px 20px 0 0;
+}
+
+.icon {
+    fill: var(--primary-color);
+    width: 20px;
+    height: 20px;
+}
+
+.footer {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}

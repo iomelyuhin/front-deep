@@ -1,0 +1,9 @@
+.PageError {
+    display: flex;
+    height: 100vh;
+    font: var(--font-l);
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
