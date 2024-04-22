@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { classNames } from '@/shared/lib/classNames/classNames';
 import cls from './SideBar.module.scss';
-import {Button, ButtonThemes} from '@/shared/ui/Button/Button';
+import { Button, ButtonThemes } from '@/shared/ui/Button/Button';
 import SvgArrowLeft from '@/shared/assets/icons/arrow-left.svg';
 import SvgArrowRight from '@/shared/assets/icons/arrow-right.svg';
 import { LangSwitcher } from '@/features/LangSwitcher';

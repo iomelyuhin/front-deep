@@ -1,5 +1,5 @@
-import {render, screen} from '@testing-library/react';
-import {Button, ButtonThemes} from '@/shared/ui/Button/Button';
+import { render, screen } from '@testing-library/react';
+import { Button, ButtonThemes } from '@/shared/ui/Button/Button';
 import '@testing-library/jest-dom/extend-expect';
 
 describe('Button', () => {
