@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { classNames } from '@/shared/lib/classNames/classNames';
 import cls from './SideBar.module.scss';
-import { Button } from '@/shared/ui/Button/Button';
+import {Button, ButtonThemes} from '@/shared/ui/Button/Button';
 import SvgArrowLeft from '@/shared/assets/icons/arrow-left.svg';
 import SvgArrowRight from '@/shared/assets/icons/arrow-right.svg';
 import { LangSwitcher } from '@/features/LangSwitcher';
@@ -27,7 +27,7 @@ export const SideBar = (props: SideBarProps) => {
             <Button
                 onClick={toggleBar}
                 className={cls.button}
-                theme="clear"
+                theme={ButtonThemes.CLEAR}
                 data-testid="side-bar-button"
             >
                 {collapsed
