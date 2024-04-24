@@ -34,9 +34,9 @@ export const SideBar = (props: SideBarProps) => {
                     ? <SvgArrowRight className={classNames(cls.icon)} />
                     : <SvgArrowLeft className={classNames(cls.icon)} />}
             </Button>
-            <div className={classNames(cls.footer)}>
+            <div className={classNames(cls.footer, { [cls.column]: collapsed && collapsed })}>
                 <ThemeSwitcher />
-                <LangSwitcher />
+                <LangSwitcher collapsed={collapsed} />
             </div>
 
         </div>

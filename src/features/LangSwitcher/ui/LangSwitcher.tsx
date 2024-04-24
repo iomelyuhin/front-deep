@@ -5,10 +5,11 @@ import { Button, ButtonThemes } from '@/shared/ui/Button/Button';
 
 interface LangSwitcherProps {
     className?: string;
+    collapsed?: boolean;
 }
 
 export const LangSwitcher = (props: LangSwitcherProps) => {
-    const { className } = props;
+    const { className, collapsed } = props;
     const { i18n, t } = useTranslation();
 
     const changeLang = async () => {
@@ -21,7 +22,7 @@ export const LangSwitcher = (props: LangSwitcherProps) => {
                 theme={ButtonThemes.CLEAR}
                 className={cls.button}
             >
-                { t('language') }
+                { collapsed ? t('lang') : t('language') }
             </Button>
         </div>
     );

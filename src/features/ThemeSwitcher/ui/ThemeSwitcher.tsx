@@ -22,13 +22,13 @@ export const ThemeSwitcher = (props: ThemeSwitcherProps) => {
             >
                 {theme === 'dark'
                     ? (
-                        <SvgMoon
-                            className={classNames(cls.icon, {}, [cls.iconMoon])}
+                        <SvgSun
+                            className={classNames(cls.icon, {}, [cls.iconSun])}
                         />
                     )
                     : (
-                        <SvgSun
-                            className={classNames(cls.icon, {}, [cls.iconSun])}
+                        <SvgMoon
+                            className={classNames(cls.icon, {}, [cls.iconMoon])}
                         />
                     )}
             </Button>

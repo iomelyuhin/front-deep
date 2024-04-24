@@ -10,6 +10,13 @@
     width: var(--sidebar-width-collapsed);
 }
 
+.column {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
 .button {
     margin-left: auto;
     padding: 10px 20px 0 0;
