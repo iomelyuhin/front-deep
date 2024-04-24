@@ -39,6 +39,7 @@ module.exports = {
         'no-unused-vars': 'off',
         'i18next/no-literal-string': 'off',
         'max-len': 'off',
+        'linebreak-style': ['error', process.platform === 'win32' ? 'windows' : 'unix'],
     },
     globals: {
         __IS_DEV__: true,
