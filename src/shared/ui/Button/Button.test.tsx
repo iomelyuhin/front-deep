@@ -1,6 +1,7 @@
 import { render, screen } from '@testing-library/react';
-import { Button, ButtonThemes } from '@/shared/ui/Button/Button';
+import { Button } from '@/shared/ui/Button/Button';
 import '@testing-library/jest-dom/extend-expect';
+import { ButtonThemes } from '@/shared/ui/Button/Button.types';
 
 describe('Button', () => {
     test('renders correctly', () => {

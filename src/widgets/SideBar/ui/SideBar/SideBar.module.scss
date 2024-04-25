@@ -6,10 +6,6 @@
     background-color: var(--nav-bar-bg-color);
 }
 
-.collapsed {
-    width: var(--sidebar-width-collapsed);
-}
-
 .column {
     display: flex;
     align-items: center;
@@ -20,12 +16,16 @@
 .button {
     margin-left: auto;
     padding: 10px 20px 0 0;
+    position: absolute;
+    right: -32px;
+    border-radius: 0 5px 5px 0;
+    bottom: 15px;
 }
 
 .icon {
     fill: var(--primary-color);
-    width: 20px;
-    height: 20px;
+    width: 50%;
+    height: 50%;
 }
 
 .footer {
@@ -36,4 +36,56 @@
     display: flex;
     align-items: center;
     gap: 15px;
+}
+
+
+.Links {
+    --icon-padding: 10px;
+    --icon-size: var(--font-line-m);
+    --button-padding: 27px;
+
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+
+    .Link {
+
+        padding: 15px var(--button-padding);
+        display: flex;
+        align-items: center;
+        position: relative;
+        width: 100%;
+
+        span {
+            position: absolute;
+            left: calc(var(--button-padding) + var(--icon-size) + var(--icon-padding));
+            bottom: 14px;
+            opacity: 1;
+            white-space: nowrap;
+            transition: left 0.3s ease, opacity 0.1s ease;
+        }
+    }
+
+    .LinkIcon {
+        width: var(--icon-size);
+        height: var(--icon-size);
+        fill: var(--primary-color);
+        margin-right: 10px;
+        flex-shrink: 0;
+    }
+}
+
+
+
+
+.collapsed {
+    width: var(--sidebar-width-collapsed);
+
+    .Link {
+        span {
+            opacity: 0;
+            left: calc(var(--button-padding) + var(--icon-size));
+        }
+    }
 }

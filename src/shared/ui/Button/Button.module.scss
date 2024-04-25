@@ -1,6 +1,22 @@
 .Button {
     cursor: pointer;
     display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 8px 20px;
+
+    &.size {
+        &-l {
+            font: var(--font-l);
+        }
+        &-m {
+            font: var(--font-m);
+        }
+        &-xl {
+            font: var(--font-xl);
+        }
+    }
 }
 
 .clear {
@@ -13,7 +29,40 @@
 .outline {
     border: 1px solid var(--primary-color);
     background: none;
-    padding: 8px 20px;
     color: var(--primary-color);
     border-radius: 5px;
 }
+
+.background {
+    background-color: var(--nav-bar-bg-color);
+    color: var(--primary-color);
+    border: none;
+}
+
+.backgroundInverted {
+    background-color: var(--nav-bar-bg-color);
+    color: var(--primary-color-inverted);
+    border: none;
+}
+
+.square {
+    padding: 0;
+    width: 40px;
+    height: 40px;
+
+    &.size {
+        &-l {
+            width: var(--font-line-l);
+            height: var(--font-line-l);
+        }
+        &-m {
+            width: var(--font-line-m);
+            height: var(--font-line-m);
+        }
+        &-xl {
+            width: var(--font-line-xl);
+            height: var(--font-line-xl);
+        }
+    }
+}
+

@@ -3,7 +3,8 @@ import cls from './ThemeSwitcher.module.scss';
 import { useTheme } from '@/shared/providers/ThemeProvider';
 import SvgMoon from '@/shared/assets/icons/moon.svg';
 import SvgSun from '@/shared/assets/icons/sun.svg';
-import { Button, ButtonThemes } from '@/shared/ui/Button/Button';
+import { Button } from '@/shared/ui/Button/Button';
+import { ButtonThemes } from '@/shared/ui/Button/Button.types';
 
 interface ThemeSwitcherProps {
     className?: string;
