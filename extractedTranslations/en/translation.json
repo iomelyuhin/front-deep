@@ -1,9 +1,12 @@
 {
   "About page": "About page",
+  "Enter your email and pass": "Enter your email and pass",
   "Main page": "Main page",
   "Not found": "Not found",
   "Reload page": "Reload page",
+  "Sign in": "Sign in",
   "Something went wrong": "Something went wrong",
   "lang": "lang",
-  "language": "language"
+  "language": "language",
+  "open modal": "open modal"
 }

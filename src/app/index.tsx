@@ -1,18 +1,21 @@
 import { render } from 'react-dom';
 import { BrowserRouter } from 'react-router-dom';
-import { Suspense } from 'react';
 import App from './App';
+import 'app/styles/index.scss';
 import { ThemeProvider } from '@/shared/providers/ThemeProvider';
 import { ErrorBoundary } from '@/app/ui/ErrorBoundary/ErrorBoundary';
+import { StoreProvider } from '@/shared/providers/StoreProvider';
 
 render(
-    <BrowserRouter>
-        <ErrorBoundary>
-            <ThemeProvider>
-                <App />
-            </ThemeProvider>
-        </ErrorBoundary>
+    <StoreProvider>
+        <BrowserRouter>
+            <ErrorBoundary>
+                <ThemeProvider>
+                    <App />
+                </ThemeProvider>
+            </ErrorBoundary>
 
-    </BrowserRouter>,
+        </BrowserRouter>
+    </StoreProvider>,
     document.getElementById('root'),
 );
